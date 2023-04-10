@@ -1,13 +1,169 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.HeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 20px;
 }
+
+.links a {
+  padding-left: 20px;
+  font-size: .875rem;
+  color: rgb(45, 45, 45);
+  text-decoration: none;
+
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.avatar img {
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* search bar styling*/
+.SearchS{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: .875rem;
+  
+}
+.SearchS img{
+  cursor: pointer;
+}
+input{
+    width: 500px;
+    height: 41px;
+  margin-top: 20px;
+  outline: none;
+  position: relative;
+  top: -25px;
+  margin-left: 20px;
+  outline: none;
+  border: none;
+ padding-left: 8px;
+  
+}
+.SearchB:hover{
+box-shadow: 0 0 9px 3px rgb(231, 231, 231);
+}
+
+.SearchB{
+  position: relative;
+  border: 1px solid rgb(216, 215, 215);
+  width: 560px;
+  height: 41px;
+  padding: 5px 8px 0 14px;
+  border-radius: 30px;
+  
+
+}
+.sIcon{
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  z-index: 1;
+  
+}
+.SVoice{
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  right: 50px;
+  margin: 10px;
+}
+.SLens{
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 20px;
+}
+/*button styling*/
+.GButtons{
+  padding-top: 18px;
+}
+button{
+  padding: 0 16px;
+  margin: 11px 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  height: 36px;
+  cursor: pointer;
+  color: #3c4043;
+  border-radius: 4px;
+  text-align: center;  
+}
+button:hover{
+  border: 1px solid #3c40432d;
+}
+
+.LangDiv{
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+   color: #4d5156;
+   font-size: .8125rem;
+}
+
+.LanguageProps{
+  padding: 0 6px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+.LanguageProps:hover{
+  text-decoration: underline;
+}
+
+/*footer styling*/
+.footer{
+  margin-top: 150px;
+  background-color: #f8f9fa;
+}
+
+.LocationText{
+  font-size: 15px;
+  color:#70757a;
+  border-bottom: 1px solid #dadce0;
+  padding: 8px 30px 0px 30px;
+  display: block;
+}
+.bottomLinks{
+  color: #70757a;
+  font-size: 14px;
+  text-decoration: none;
+}
+.bottomLinks:hover{
+  text-decoration: underline;
+}
+.lastFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 0px 30px;
+  flex-wrap: wrap;
+  
+ 
+}
+.bottomMenu, .bottomMenuText{
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+     gap: 20px;
+}
+ .bottomMenuText {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 5px;
+ }
